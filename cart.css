@@ -1,0 +1,125 @@
+body, html {
+    margin: 0;
+    padding: 0;
+    font-family: 'Inter', sans-serif;
+    background-color: #F9E6E5;
+    overflow-x: hidden;
+}
+
+header {
+    background-color: #DCD4E6;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-size: 14px;
+    padding: 0% 5%;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.logo img {
+    height: 100px;
+    width: auto;
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+    gap: 40px;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: #A35476;
+    font-weight: bold;
+    font-family: 'Inria Sans', sans-serif;
+    display: flex;
+    align-items: center;
+    gap: 5px;
+    transition: color 0.3s ease, transform 0.3s ease, background-color 0.3s ease;
+    padding: 10px 15px;
+    border-radius: 5px;
+}
+
+nav ul li a:hover {
+    color: #D67A9D;
+    transform: scale(1.1);
+    background-color: rgba(214, 122, 157, 0.2);
+}
+
+main {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    padding: 20px;
+    margin-top: 5px;
+}
+
+.cart-container {
+    position:center;
+    margin-top: auto;
+    margin-bottom: auto;
+    background-color: #EDD3E9;
+    padding: 90px; /* Ajustez le padding si nécessaire */
+    border-radius: 20px;
+    text-align: center;
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+    width: 50%; /* Largeur fixe pour un carré */
+    height: 4%; /* Hauteur fixe pour un carré */
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.cart-container:hover {
+    transform: scale(1.02);
+    box-shadow: 0 5% 5% rgba(0, 0, 0, 0.3);
+}
+
+.cart-icon {
+    font-size: 500%; /* Ajustez la taille de l'icône si nécessaire */
+    color: #5784BD;
+    margin-bottom: 30px;
+}
+
+.cost {
+    margin-top: 30px; 
+    margin-bottom: 40px;/* Ajustez si nécessaire */
+}
+
+.cost input {
+    padding: 10px;
+    border: 2px solid #D58FE7;
+    border-radius: 10px;
+    font-size: 1.2em;
+    background-color: #F3E0F7;
+    width: 90%;
+    height: auto;
+    box-shadow: inset 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.cost span {
+    font-size: 24px;
+    color: #5784BD;
+}
+
+.purchased-products {
+    margin-top: 20px;
+    color: #5784BD;
+}
+
+button {
+    padding: 15px 20px;
+    border: none;
+    border-radius: 20px;
+    background-color: #D58FE7;
+    color: white;
+    font-size: 1.2em;
+    cursor: pointer;
+    font-family: 'Inter', sans-serif;
+    margin-top: 20px;
+    transition: background-color 0.3s ease, transform 0.2s ease;
+}
+
+button:hover {
+    background-color: #A35476;
+    transform: scale(1.05);
+}

@@ -1,0 +1,119 @@
+/* General styles */
+body, html {
+    margin: 0;
+    padding: 0;
+    font-family: 'Inter', sans-serif;
+    background-color: #F9E6E5;
+}
+
+header {
+    background-color: #DCD4E6;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-size: 14px;
+    padding: 0% 5%;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.logo img {
+    height: 100px;
+    width: auto;
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+    gap: 40px;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: #A35476;
+    font-weight: bold;
+    font-family: 'Inria Sans', sans-serif;
+    display: flex;
+    align-items: center;
+    gap: 5px;
+    transition: color 0.3s ease, transform 0.3s ease, background-color 0.3s ease;
+    padding: 10px 15px;
+    border-radius: 5px;
+}
+
+nav ul li a:hover {
+    color: #D67A9D;
+    transform: scale(1.1);
+    background-color: rgba(214, 122, 157, 0.2);
+}
+
+main {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: calc(100vh - 100px);
+    padding: 6%;
+}
+
+.add-post-container {
+    background-color: #EDD3E9;
+    padding: 0% 2%;
+    border-radius: 15px;
+    text-align: center;
+    box-shadow: 0 5% 10% rgba(0, 0, 0, 0.1);
+    width: 100%;
+    max-width: 40%;
+    box-sizing: 40% 80%;
+}
+
+.add-post-container:hover {
+    transform: scale(1.02);
+    box-shadow: 0 12px 24px rgba(0, 0, 0, 0.3);
+}
+
+.add-post-container h1 {
+    font-size: 1.8em;
+    color: #A35476;
+    font-family: 'Itim', cursive;
+    margin-bottom: 20px;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+label {
+    font-size: 1.2em;
+    color: #5784BD;
+    font-family: 'Itim', cursive;
+}
+
+input, textarea {
+    padding: 10px;
+    border: 1px solid #D58FE7;
+    border-radius: 5px;
+    font-size: 1em;
+    background-color: #F3E0F7;
+    font-family: 'Instrument Serif', serif;
+}
+
+textarea {
+    height: 80px;
+    resize: none;
+}
+
+button {
+    padding: 2%;
+    border: none;
+    border-radius: 20px;
+    background-color: #D58FE7;
+    color: white;
+    font-size: 1em;
+    cursor: pointer;
+    font-family: 'Inter', sans-serif;
+}
+
+button:hover {
+    background-color: #A35476;
+}

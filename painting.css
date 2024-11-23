@@ -1,0 +1,155 @@
+/* General Styles */
+body {
+    margin: 0;
+    padding: 0;
+    font-family: 'Inria Sans', sans-serif;
+    background-color: #FFE9E8;
+    color: #5E3547;
+}
+header {
+    background-color: #DCD4E6;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-size: 16px;
+    padding: 15px 30px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.logo img {
+    height: 100px;
+    width: auto;
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+    gap: 40px;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: #A35476;
+    font-weight: bold;
+    font-family: 'Inria Sans', sans-serif;
+    display: flex;
+    align-items: center;
+    gap: 5px;
+    transition: color 0.3s ease, transform 0.3s ease, background-color 0.3s ease;
+    padding: 10px 15px;
+    border-radius: 5px;
+}
+
+nav ul li a:hover {
+    color: #D67A9D;
+    transform: scale(1.1);
+    background-color: rgba(214, 122, 157, 0.2);
+}
+/* Main Content */
+main {
+    text-align: center;
+    padding: 20px;
+}
+
+main h1 {
+    color: #AA4C76;
+    font-size: 2em;
+    margin-bottom: 30px;
+}
+
+/* Product Grid */
+.products-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(150px, 1fr));
+    gap: 20px;
+    padding: 20px;
+
+}
+
+.product {
+    background-color: #FCE9E6;
+    border: 1px solid #DCD4E6;
+    border-radius: 10px;
+    padding: 15px;
+    text-align: center;
+    transition: transform 0.3s ease;
+    height: 120px;
+    width: 120px;
+}
+
+.product img {
+    width: 100%;
+    border-radius: 10px;
+    margin-bottom: 10px;
+    height: 120px;
+    width: 120px;
+
+}
+
+.product p {
+    color: #5E3547;
+    font-size: 1em;
+    margin: 0;
+}
+
+.product:hover {
+    transform: translateY(-5px);
+}
+
+/* Order Button */
+.order-button {
+    margin-top: 30px;
+}
+
+.order-button button {
+    background-color: #D5A4E7;
+    color: #fff;
+    font-size: 1.2em;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 30px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.order-button button:hover {
+    background-color: #91568B;
+}
+div.footer{
+    margin-top: 13%;
+    padding-top: 2%;
+    margin-bottom: 0%;
+    
+}
+.footer {
+    display: flex;
+    justify-content: space-between; 
+    align-items: center; 
+    padding-top: 0px; /* Espacement interne */
+    background-color: #E0D6EF; /* Couleur de fond */
+    color: #A35476; /* Couleur du texte */
+    font-family: Arial, sans-serif;
+    margin-top: 20px;
+}
+
+/* Sections du footer */
+.footer-left,
+.footer-center,
+.footer-right {
+    flex: 1; /* Chaque section prend le même espace */
+    text-align: center; /* Centrage horizontal */
+}
+
+/* Alignement spécifique */
+.footer-left {
+    text-align: left; /* Aligne à gauche */
+    color:#A35476;
+    padding-left: 40px;
+    
+}
+
+.footer-right {
+    text-align: right; /* Aligne à droite */
+    padding-right: 40px;
+}
+
