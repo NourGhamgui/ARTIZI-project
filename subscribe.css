@@ -52,6 +52,9 @@ main {
     height: calc(100vh - 100px);
     padding: 20px;
 }
+main>div>h1 {
+    color: #A35476;
+}
 
 .payment-container {
     background-color: #F8E7F2;

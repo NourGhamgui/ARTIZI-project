@@ -5,6 +5,9 @@ body, html {
     background-color: #F9E6E5;
     
 }
+main{
+    height:95%;
+}
 
 header {
     background-color: #DCD4E6;
