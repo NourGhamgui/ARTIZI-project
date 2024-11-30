@@ -11,8 +11,10 @@
 <body>
     <header>
         <div class="logo">
-            <img src="/images/logo.png" alt="Artizi Logo">
-        </div>
+            <a href="welcomepage.html">
+                <img src="/images/logo.png" alt="Artizi Logo">
+            </a>
+                    </div>
         <nav>
             <ul>
                 <li><a href="home_page.html"><i class="fas fa-home"></i> Home</a></li>
@@ -26,22 +28,29 @@
     <main>
         <div class="add-post-container">
             <h1><i class="fas fa-plus-circle"></i> Add Post</h1>
-            <form>
+            <form onsubmit="showThankYouMessage(event)">
                 <label for="creator-name">The name of the creator</label>
-                <input type="text" id="creator-name" placeholder="enter your name">
+                <input type="text" id="creator-name" placeholder="Enter your name">
                 
                 <label for="creation-category">The category of the creation</label>
-                <input type="text" id="creation-category" placeholder="choose the category of your product">
+                <input type="text" id="creation-category" placeholder="Choose the category of your product">
                 
                 <label for="publication-date">Publication Date</label>
                 <input type="date" id="publication-date">
                 
                 <label for="publication-description">Publication Description</label>
-                <textarea id="publication-description" placeholder="describe your product here"></textarea>
+                <textarea id="publication-description" placeholder="Describe your product here"></textarea>
                 
                 <button type="submit">Post and wait for the Admin Approval</button>
             </form>
         </div>
     </main>
+
+    <script>
+        function showThankYouMessage(event) {
+            event.preventDefault(); // Empêche le rechargement de la page
+            alert("Thank you for the post! Please wait for the admin approval!");
+        }
+    </script>
 </body>
 </html>
