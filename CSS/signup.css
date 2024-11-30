@@ -1,0 +1,125 @@
+body, html {
+    margin: 0;
+    padding: 0;
+    font-family: 'Inter', sans-serif;
+    background-color: #F9E6E5;
+}
+header {
+    background-color: #DCD4E6;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-size: 14px;
+    padding: 0% 5%;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.logo img {
+    height: 100px;
+    width: auto;
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+    gap: 40px;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: #A35476;
+    font-weight: bold;
+    font-family: 'Inria Sans', sans-serif;
+    display: flex;
+    align-items: center;
+    gap: 5px;
+    transition: color 0.3s ease, transform 0.3s ease, background-color 0.3s ease;
+    padding: 10px 15px;
+    border-radius: 5px;
+}
+
+nav ul li a:hover {
+    color: #D67A9D;
+    transform: scale(1.1);
+    background-color: rgba(214, 122, 157, 0.2);
+}
+
+main {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: auto;
+    padding:2%;
+    
+}
+
+.signup-container {
+    background-color: #EDD3E9;
+    padding: 0% 4%; /* Reduced padding */
+    border-radius: 10px;
+    text-align: center;
+    box-shadow: 0 5% 5% rgba(0, 0, 0, 0.1);
+    width: 50%; /* Adjusted width to fit the page */
+    max-width: 25%; /* Maximum width */
+
+}
+.signup-container:hover {
+    transform: scale(1.02);
+    box-shadow: 0 12px 24px rgba(0, 0, 0, 0.3);
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    gap: 15px; /* Reduced gap */
+}
+
+label {
+    font-size: 1.2em;
+    color: #5784BD;
+    font-family: 'Itim', cursive;
+}
+
+input {
+    padding: 10px; /* Augmente l'espace intérieur */
+    border: 1px solid #D58FE7;
+    border-radius: 5px;
+    font-size: 1em;
+    background-color: #F3E0F7;
+    font-family: 'Instrument Serif', serif;
+    width: 90%; /* Full width */
+    height: 30px; /* Augmente la hauteur */
+}
+
+.rules {
+    color: #5784BD; /* Dark blue */
+    margin: 10px 0;
+}
+
+button {
+    padding: 10px;
+    border: none;
+    border-radius: 20px;
+    background-color: #D58FE7;
+    color: white;
+    font-size: 1em;
+    width: 100%;
+    cursor: pointer;
+    font-family: 'Inter', sans-serif;
+}
+
+button:hover {
+    background-color: #A35476; /* Dark pink on hover */
+}
+/* Styling for the parent container */
+.checkbox {
+    font-family: 'Inter', sans-serif;
+    font-size: 8px; /* Adjust font size for compactness */
+    color: #6C4971; /* Soft purple for text */
+    display: flex; /* Aligns checkbox and text horizontally */
+    align-items:self-start; /* Vertically aligns text with the checkbox */
+    margin: 10px 0; 
+    height:2px;
+    height:2px;/* Add space around the paragraph */
+}
+

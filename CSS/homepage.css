@@ -1,0 +1,326 @@
+body, html {
+    display: flex;
+    flex-direction: column;
+    margin: 0;
+    padding: 0;
+    font-family: 'Inter', sans-serif;
+    background-color: #F9E6E5;
+    height: 100% ;
+}
+main{
+    flex:1;
+}
+
+header {
+    background-color: #DCD4E6;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-size: 14px;
+    padding: 0% 5%;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.logo img {
+    height: 100px;
+    width: auto;
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+    gap: 40px;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: #A35476;
+    font-weight: bold;
+    font-family: 'Inria Sans', sans-serif;
+    display: flex;
+    align-items: center;
+    gap: 5px;
+    transition: color 0.3s ease, transform 0.3s ease, background-color 0.3s ease;
+    padding: 10px 15px;
+    border-radius: 5px;
+}
+
+nav ul li a:hover {
+    color: #D67A9D;
+    transform: scale(1.1);
+    background-color: rgba(214, 122, 157, 0.2);
+}
+
+.categories {
+    display: flex;
+    gap: 20px; /* Espace entre les catégories */
+    justify-content: center;
+    align-items: flex-start;
+    padding: 25px;
+    flex-wrap: wrap; /* Permet de s'adapter aux écrans plus petits */
+}
+
+/* Style pour chaque catégorie */
+.category {
+    text-align: center;
+    position: relative;
+}
+
+/* Lien de la catégorie */
+.category a {
+    text-decoration: none;
+    font-size: 16px;
+    color: #5784BD;
+    background-color: #E0D6EF;
+    padding: 10px 20px;
+    border-radius: 25px; /* Boutons arrondis */
+    display: inline-block;
+    transition: all 0.3s ease;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+
+/* Effet au survol du lien */
+.category a:hover {
+    background-color: #A35476;
+    color: #F9E6E5;
+}
+
+/* Icônes sous chaque catégorie */
+.category i {
+    font-size: 20px;
+    color: #666;
+    margin-top: 10px;
+    display: block;
+    transition: color 0.3s ease;
+}
+
+/* Changement de couleur au survol */
+.category a:hover + i {
+    color: #A35476;
+}
+
+/* Images associées */
+.category-image {
+    position: absolute;
+    top: 80px; /* Ajuster pour placer l'image en dessous */
+    left: 50%;
+    transform: translateX(-50%);
+    width: 150px;
+    height: 150px;
+    display: none; /* Masquer par défaut */
+    overflow: hidden;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.category-image img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+/* Afficher l'image au survol */
+.category a:hover ~ .category-image {
+    display: block;
+}
+h5{
+    text-align: center;
+    color: #5784BD;
+    font-style: italic;
+    font-weight: bolder;
+    font-family:monospace;
+    font-size: larger;
+}
+.search-bar{
+    display: flex;
+    justify-content: center; /* Centre la barre de recherche */
+    margin-top: 20px;
+}
+
+/* Barre de recherche */
+.search-bar input[type="text"] {
+    width: 300px; /* Largeur de la barre */
+    height: 5px; /* Hauteur de la barre */
+    padding: 10px; /* Espacement intérieur */
+    border: 2px solid #E0D6EF; /* Bordure colorée */
+    border-radius: 10px; /* Bords arrondis */
+    background-color: #F9E6E5; /* Couleur d'arrière-plan */
+    color: #333; /* Couleur du texte */
+    font-size: 16px; /* Taille du texte */
+    font-family: D58FE7;
+}
+
+/* Placeholder (texte par défaut dans la barre) */
+.search-bar input[type="text"]::placeholder {
+    color: #A35476; /* Couleur du placeholder */
+    font-style: italic; /* Style du placeholder */
+}
+
+/* Barre de recherche au focus */
+.search-bar input[type="text"]:focus {
+    outline: none; /* Supprime le contour par défaut */
+    border-color: #A35476; /* Change la couleur de la bordure au focus */
+    
+}
+.search-bar button {
+    color: #A35476;
+    background-color:#D58FE7 ;
+    border-color:#D58FE7 ;
+}
+main> div >p{
+    text-align: center;
+    padding-top: 15px;
+    color:#A35476;
+    font-family:Georgia, 'Times New Roman', Times, serif;
+    font-size: larger;
+    font-style: oblique;
+    
+}
+.categories .category i {
+    color: #D58FE7; /* Couleur principale des icônes */
+    font-size: 24px; /* Taille des icônes */
+    margin-top: 3px; /* Espacement au-dessus */
+    display: block; /* Pour aligner avec le texte */
+}
+
+.footer {
+    display: flex;
+    align-items: center; 
+    padding-top: 0px; /* Espacement interne */
+    background-color: #DCD4E6; /* Couleur de fond */
+    color: #A35476; /* Couleur du texte */
+    font-family: Arial, sans-serif;
+    margin-top: 1%;
+}
+
+/* Sections du footer */
+.footer-left,
+.footer-center,
+.footer-right {
+    flex: 1; /* Chaque section prend le même espace */
+    text-align: center; /* Centrage horizontal */
+}
+
+/* Alignement spécifique */
+.footer-left {
+    text-align: left; /* Aligne à gauche */
+    color:#A35476;
+    padding-left: 40px;
+    
+}
+
+.footer-right {
+    text-align: right; /* Aligne à droite */
+    padding-right: 40px;
+}
+.text-with-icon {
+    text-align: center; /* Centre tout le contenu */
+}
+
+.text-with-icon h5 {
+    display: inline-block; /* S'assure que le texte reste sur la même ligne */
+    margin: 0;
+    font-size: 18px;
+    font-weight: normal;
+    line-height: 1.5;
+}
+
+.plus-icon {
+    color: #A35476;
+    font-size: 18px;
+    text-decoration: none;
+    transition: transform 0.3s ease, color 0.3s ease;
+}
+
+.plus-icon:hover {
+    color: #D67A9D;
+    transform: scale(1.2); /* Agrandissement de l'icône au survol */
+}
+
+/* Div contenant l'icône sur la ligne suivante */
+.icon-line {
+    text-align: center; /* Centrer l'icône */
+    margin-top: 10px; /* Espacement entre la phrase et l'icône */
+}
+
+.icon-line .plus-icon {
+    font-size: 10px; /* Augmenter la taille de l'icône */
+}
+.footer-right a {
+    color:#A35476;
+    
+}
+.rating-container {
+    text-align: center;
+    margin-bottom: 10px;
+}
+
+.rating-container .fa-star {
+    color: #F9E6E5; /* Couleur des étoiles */
+    font-size: 16px; /* Taille des étoiles */
+    cursor: pointer;
+    transition: color 0.3s ease;
+}
+
+.rating-container .fa-star:hover,
+.rating-container .fa-star.selected {
+    color: #A35476; /* Couleur des étoiles sélectionnées */
+}
+
+
+.checked {
+    color: #DCD4E6;
+}
+
+.back-to-top:hover {
+    background-color: #D67A9D;
+}
+/* CSS Animations for visual effects */
+@keyframes fadeOut {
+    0% {
+        opacity: 1;
+    }
+    100% {
+        opacity: 0;
+        transform: translate(-50%, -60%);
+    }
+}
+
+@keyframes shake {
+    0%,
+    100% {
+        transform: translateX(0);
+    }
+    20%,
+    60% {
+        transform: translateX(-10px);
+    }
+    40%,
+    80% {
+        transform: translateX(10px);
+    }
+}
+
+/* Optional: Styling for the search bar and button */
+.search-bar input {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #F9E6E5;
+    border-radius: 5px;
+    transition: border-color 0.3s ease-in-out;
+}
+
+.search-bar button {
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    background-color:   #F9E6E5;
+    color: #F9E6E5;
+    font-weight: bold;
+    cursor: pointer;
+    transition: background-color 0.3s ease-in-out, color 0.3s ease-in-out;
+}
+
+
+
+

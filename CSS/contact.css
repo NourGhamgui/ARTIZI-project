@@ -1,0 +1,171 @@
+/* General Body Styling */
+body, html {
+    margin: 0;
+    padding: 0;
+    font-family: 'Inter', sans-serif;
+    background-color: #F9E6E5; /* Soft pink background */
+    overflow-x: hidden; /* Prevent horizontal scrolling */
+}
+
+/* Header Styling */
+header {
+    background-color: #DCD4E6; /* Light purple background */
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 20px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Subtle shadow for depth */
+    transition: all 0.3s ease-in-out;
+}
+
+header:hover {
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2); /* Deeper shadow on hover */
+    background-color: #D4B6D8; /* Slightly darker background on hover */
+}
+
+/* Logo Styling */
+.logo img {
+    height: 80px;
+    width: auto;
+    transition: transform 0.3s ease;
+}
+
+.logo img:hover {
+    transform: scale(1.05); /* Scale logo on hover for a 3D effect */
+}
+
+/* Navigation Menu Styling */
+nav ul {
+    list-style: none;
+    display: flex;
+    gap: 30px;
+    margin: 0;
+    padding: 0;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: #A35476; /* Soft burgundy */
+    font-weight: bold;
+    font-family: 'Inria Sans', sans-serif;
+    display: flex;
+    align-items: center;
+    gap: 5px;
+    transition: color 0.3s ease, transform 0.3s ease, text-shadow 0.3s ease;
+}
+
+nav ul li a:hover {
+    color: #D67A9D; /* Lighter burgundy for hover */
+    transform: scale(1.1); /* Slightly enlarges on hover */
+    text-shadow: 2px 2px 10px rgba(0, 0, 0, 0.2); /* Adds glowing effect on hover */
+}
+
+/* Main Section Styling */
+main {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 80vh; /* Centers content vertically */
+    padding: 20px;
+}
+
+/* Login Box Styling */
+.login-box {
+    background-color: #F4D8E9; /* Light lavender-pink */
+    border-radius: 20px; /* Rounded corners */
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2); /* Shadow for depth */
+    padding: 40px;
+    text-align: center;
+    width: 90%; /* Responsive width */
+    max-width: 500px; /* Limits maximum width */
+    transition: all 0.3s ease-in-out;
+}
+
+.login-box:hover {
+    box-shadow: 0 12px 24px rgba(0, 0, 0, 0.3); /* Deeper shadow on hover */
+    transform: translateY(-5px); /* Lift effect on hover */
+}
+
+/* Login Title */
+.login-box h2 {
+    color: #8A5B91; /* Deep purple */
+    margin-bottom: 20px;
+    font-size: 1.5em;
+    font-weight: bold;
+    transition: color 0.3s ease;
+}
+
+.login-box h2:hover {
+    color: #D67A9D; /* Lighten title color on hover */
+}
+
+/* Input Fields Styling */
+.login-box input[type="text"],
+.login-box input[type="password"] {
+    width: 100%; /* Full width */
+    padding: 15px;
+    margin: 10px 0;
+    border: 2px solid #D58FE7; /* Lavender border */
+    border-radius: 10px;
+    font-size: 1em;
+    background-color: #FBEAF7; /* Soft pink background for inputs */
+    box-shadow: inset 0 4px 8px rgba(0, 0, 0, 0.1); /* Inner shadow for depth */
+    transition: border-color 0.3s ease, box-shadow 0.3s ease;
+}
+
+.login-box input[type="text"]:hover,
+.login-box input[type="password"]:hover {
+    border-color: #D67A9D; /* Change border color on hover */
+    box-shadow: inset 0 4px 16px rgba(0, 0, 0, 0.15); /* Deeper inner shadow */
+}
+
+/* Button Styling */
+.login-box button {
+    width: 100%;
+    padding: 15px;
+    border: none;
+    border-radius: 20px;
+    background-color: #D58FE7; /* Lavender background */
+    color: white;
+    font-size: 1.2em;
+    font-weight: bold;
+    cursor: pointer;
+    margin-top: 15px;
+    transition: background-color 0.3s ease, transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.login-box button:hover {
+    background-color: #A35476; /* Burgundy for hover */
+    transform: scale(1.05); /* Slightly enlarges on hover */
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2); /* Shadow effect */
+}
+
+/* Sign Up Button Styling */
+.login-box .signup-btn {
+    background-color: #FBEAF7; /* Light pink */
+    color: #8A5B91; /* Deep purple */
+    border: 2px solid #D58FE7; /* Lavender border */
+    margin-top: 10px;
+    transition: background-color 0.3s ease, transform 0.3s ease;
+}
+
+.login-box .signup-btn:hover {
+    background-color: #E3C5DE; /* Darker pink */
+    color: #6C4971; /* Darker purple */
+    transform: scale(1.05); /* Slightly enlarges on hover */
+}
+
+/* Footer Styling */
+footer {
+    text-align: center;
+    padding: 10px;
+    background-color: #DCD4E6;
+    color: #8A5B91;
+    font-size: 0.9em;
+    transition: background-color 0.3s ease, transform 0.3s ease;
+}
+
+footer:hover {
+    background-color: #D4B6D8; /* Slightly darker background on hover */
+    transform: translateY(5px); /* Lift effect on hover */
+}

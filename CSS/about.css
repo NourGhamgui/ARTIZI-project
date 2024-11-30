@@ -1,0 +1,125 @@
+
+body, html {
+    display: flex;
+    flex-direction: column;
+    margin: 0;
+    padding: 0;
+    font-family: 'Inter', sans-serif;
+    background-color: #F9E6E5; /* Light pink background */
+    color: #333; /* Darker text for readability */
+    height: 100%;
+}
+main {
+    flex: 1
+}
+
+
+header {
+    background-color: #DCD4E6; 
+    padding: 0% 5%;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); 
+}
+
+.header-container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between; /* Space between logo, title, and button */
+}
+
+
+.logo img {
+    height: 100px;
+    width: auto;
+}
+
+/* Header Title */
+header h1 {
+    font-family: 'Inria Sans', sans-serif;
+    font-size: 24px;
+    color: #A35476;
+    margin: 0;
+    text-align: center;
+    flex-grow: 1;
+}
+
+/* Back Button */
+.back-button a {
+    text-decoration: none;
+    color: #A35476;
+    font-size: 16px;
+    display: flex;
+    align-items: center;
+    gap: 5px;
+    padding: 5px 10px;
+    border-radius: 5px;
+    transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+.back-button a:hover {
+    background-color: rgba(214, 122, 157, 0.2);
+    color: #D67A9D;
+}
+
+/* Main Content */
+main {
+    padding: 20px 40px;
+}
+
+/* About Section */
+.about {
+    margin-bottom: 40px;
+    text-align: center;
+}
+
+.about h2 {
+    color: #A35476; /* Highlighted color */
+    font-size: 28px;
+    margin-bottom: 10px;
+}
+
+.about p {
+    font-size: 18px;
+    line-height: 1.6;
+}
+
+/* Inspirations Section */
+.inspirations {
+    text-align: center;
+}
+
+.inspiration-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 20px;
+}
+
+.inspiration-item {
+    padding: 20px;
+    background-color: #FFF; /* White cards */
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Subtle shadow */
+    font-style: italic;
+    font-size: 18px;
+}
+
+blockquote {
+    margin: 0;
+    color: #555;
+}
+
+blockquote em {
+    display: block;
+    margin-top: 10px;
+    font-size: 16px;
+    font-weight: bold;
+    color: #A35476; /* Highlight for author's name */
+}
+
+/* Footer */
+footer {
+    text-align: center;
+    padding: 20px;
+    background-color: #DCD4E6;
+    color: #333;
+    font-size: 14px;
+}
