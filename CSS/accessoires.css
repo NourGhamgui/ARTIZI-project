@@ -8,7 +8,69 @@ body {
     background-color: #FFE9E8;
     color: #5E3547;
     height: 100vb;
+    background-image: url(/images/wlc_page-fotor-20241201224337.jpg);
 }
+/* Conteneur de l'icône de panier */
+.cart-icon {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    background-color: #ffffff;
+    border-radius: 50%;
+    padding: 10px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    color: #A35476;
+    font-size: 16px;
+    display: none; /* Masqué par défaut */
+    cursor: pointer;
+    transition: transform 0.3s ease, opacity 0.3s ease;
+}
+
+/* Apparition au survol */
+.product:hover .cart-icon {
+    display: block;
+    transform: scale(1.2); /* Zoom léger */
+    opacity: 1;
+}
+
+/* Produit avec position relative */
+.product {
+    position: relative;
+    background-color: #FCE9E6;
+    border: 1px solid #DCD4E6;
+    border-radius: 10px;
+    padding: 15px;
+    text-align: center;
+    transition: transform 0.3s ease;
+    height: 200px;
+    width: 150px;
+}
+
+.product img {
+    width: 100%;
+    border-radius: 10px;
+    margin-bottom: 10px;
+    height: 120px;
+    object-fit: cover;
+}
+
+.product p {
+    color: #5E3547;
+    font-size: 1em;
+    margin: 0;
+}
+
+.product:hover {
+    transform: translateY(-5px);
+}
+
+/* Effet au clic sur l'icône */
+.cart-icon:active {
+    transform: scale(1); /* Retour à l'échelle normale */
+    background-color: #D67A9D; /* Change de couleur */
+    color: #ffffff;
+}
+
 header {
     background-color: #DCD4E6;
     display: flex;
