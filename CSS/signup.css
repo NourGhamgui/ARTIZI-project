@@ -113,14 +113,56 @@ button:hover {
     background-color: #A35476; /* Dark pink on hover */
 }
 /* Styling for the parent container */
-.checkbox {
+#privacy_policy{
     font-family: 'Inter', sans-serif;
-    font-size: 8px; /* Adjust font size for compactness */
+    font-size: 2px; /* Adjust font size for compactness */
     color: #6C4971; /* Soft purple for text */
     display: flex; /* Aligns checkbox and text horizontally */
     align-items:self-start; /* Vertically aligns text with the checkbox */
     margin: 10px 0; 
     height:2px;
     height:2px;/* Add space around the paragraph */
+}
+/* Conteneur pour le champ de mot de passe et l'icône */
+/* Centrage global de la boîte */
+.password-container {
+    position: relative;
+    width: 100%; /* Assurez-vous que le conteneur occupe toute la largeur */
+    display: flex; /* Utilise Flexbox pour aligner les éléments */
+    align-items: center; /* Aligne les éléments verticalement au centre */
+}
+
+/* Champ de mot de passe avec espace pour l'icône */
+.password-container input {
+    width: 100%; /* Le champ prend toute la largeur disponible */
+    padding-right: 40px; /* Ajoutez de l'espace pour l'icône */
+    box-sizing: border-box; /* Inclut les paddings dans la largeur totale */
+}
+
+/* Icône de l'œil positionnée à droite */
+.password-container i {
+    position: absolute;
+    right: 10px; /* Décalage par rapport au bord droit */
+    top: 50%; /* Centre verticalement */
+    transform: translateY(-50%);
+    font-size: 18px; /* Ajustez la taille de l'icône */
+    color: #888; /* Couleur initiale */
+    cursor: pointer; /* Icône cliquable */
+}
+
+/* Ajustement de l'icône au survol */
+.password-container i:hover {
+    color: #555; /* Change la couleur pour indiquer une action possible */
+}
+
+/* Optionnel : Centrage global du formulaire */
+form {
+    display: flex;
+    flex-direction: column; /* Aligne les éléments en colonne */
+    align-items: center; /* Centre horizontalement tous les éléments */
+    justify-content: center; /* Centre verticalement si nécessaire */
+    width: 100%; /* Assurez une largeur de 100% */
+    max-width: 400px; /* Limitez la largeur */
+    margin: 0 auto; /* Centre horizontalement sur la page */
 }
 
